@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>HTML Form Element</h1>
+    <form action="login.php" method="post">
+          <label for="email">Email: </label>  <input type="email" name="email" id="email"><br>
+           <label for="password">Password: </label>  <input type="password" name="password" id="password"><br>
+          <input type="submit" value="Login">
+    </form>
+
+<h1>Student Registration form</h1>
+    <form action="register.php" method="get" enctype="multipart/form-data">
+
+        STUDENTID: <input type="text"name="STUDENTID"id="STUDENTID" disabled="disabled"  value="1234">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <input type="hidden" name="id" value="56">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required="required" minlength="4" maxlength="10" size="12">* <br>
+        <label for="address">Address</label>
+        <textarea name="adress" id="adress" cols="20" rows="3"></textarea><br>
+    </fieldset>
+    <h4>Intrests</h4>
+    <input type="checkbox" name="html" id="html"value="html" checked="checked"><label for="html">HTML</label>
+    <input type="checkbox" name="css" id="css"value="css"><label for="html">CSS</label>
+    <input type="checkbox" name="js" id="js"value="js"><label for="html">jS</label>
+
+    <h4>Gender</h4>
+    <input type="radio" name="gender" id="mle" value="male"checked="checked"><label for="male">MALE</label>
+    <input type="radio" name="gender" id="femle"value="female"><label for="female">FEMALRE</label>
+
+    <h4>Education</h4>
+<select name="education" id="education" multiple="multiple">
+    <option value="0">Select Education level</option>
+    <option value="1">Highschool</option>
+    <option value="2" selected="selected">University</option>
+    <option value="3">Collage</option>
+</select>
+<label for="photo">Your Photo</label>
+<input type="file" name="photo" id="photo">
+<br>
+<label for="age">Age</label><input type="number" name="age" id="age" min="16" max="120" step="5"><br>
+<br>
+<label for="height">HeightT</label><input type="number"name="height" id="height" min="4" max="7.6" step="0.1">
+        <br>
+        <input type="reset" value="Clear">
+        <input type="submit" value="Register">
+
+    
+        
+    </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6XMholUcdHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
