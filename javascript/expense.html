@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+</head>
+<body>
+        <h1>Expense Form</h1>
+        
+        Date: <input type="date" id="date"> <br>
+        Name: <input type="text"  id="name"> <br>
+        Amount: <input type="number"  id="amount"> <br>
+        Total
+        <button onclick="addExpense()">Add Expense</button>
+
+        <h3>Expense List</h3>
+        <table border="1px" cellpadding="10">
+            <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                    </tr>
+            </thead>
+            <tbody id="mydata">
+                <script>
+                     var html='';
+        var total=0;
+        var i=1;
+                    let myExpensesList=[];
+                    function addExpense(){
+                        let date=document.getElementById("date").value;
+                        let name=document.getElementById("name").value;
+                        let amount=document.getElementById("amount").value
+                        let Total=amount
+                        
+                        let expenses={
+                            date : date,
+                            name : name,
+                            amount : amount
+                            
+                        }
+                        
+                        myExpensesList.push(expenses);
+                        showdata();
+                    }
+                    function showdata(){
+                        html=''
+                        
+                        for(var i=1;i<myExpensesList.length;i++){
+                         let expenses=myExpensesList[i];
+                         
+                         html =html+`<tr>
+    <td>${i+1}</td><td>${expenses.date}</td><td>${expenses.name}</td><td>${expenses.amount}</td><td>${expenses.total}</td></tr>`
+document.getElementById("mydata").innerHTML=html;
+}  
+                        }
+                    
+                        
+                    
+                </script>
+                    <tr>
+                        <td>1</td>
+                        <td>20/10/2022</td>
+                        <td>Tea</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>Noodle</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>Lemon Tea</td>
+                        <td>1000</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>22/10/2022</td>
+                        <td>Chicken Pop</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>Fried Rice(Malaysia style)</td>
+                        <td>3500</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>6500</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>22/10/2022</td>
+                        <td>Hot Beef(indonesia atyle)</td>
+                        <td>4500</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>Fried fish with Curry</td>
+                        <td>6000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>3 Rice bowl(extra 2)</td>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>sea food</td>
+                        <td>8000</td>
+                    </tr>
+
+                    
+                   
+                        <td></td>
+                        <td>22/10/2022</td>
+                        <td>Indin Soup</td>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>26500</td>
+                    </tr>
+            </tbody>
+            
+        </table>
+</body>
+</html>

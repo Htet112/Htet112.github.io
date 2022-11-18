@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Images Actions</title>
+</head>
+<body onload="">
+   <p id="mytime"></p>
+   <button onclick="stoptime()">STOP</button><br>
+
+   <button onclick="myvar=setTimeout('alert(\'Hello\' )',3000)">Say Hi</button>
+   <button onclick="clearTimeout(myvar)">Stop Hi</button>
+   Name;<input type="text" name="name" id="name" onchange="sayhi()"onkeyup="sayhi()"><br>
+    <img src="../images/logo1.jpg" id="myimg" onmouseover="big()" onmouseout="normal()"
+     width="200px" height="150px">
+     <script>
+ var mytimer = setInterval( 'showTime()',1000)
+function showTime(){
+   let now=new Date()
+   let todayDate=now.toLocaleDateString()
+   let currentTime=now.toLocaleTimeString()
+   document.getElementById("mytime").innerHTML="Date"+todayDate+"Time :"+currentTime;
+}
+function stoptime(){
+   clearInterval(mytimer)
+}
+
+      function show2d(){
+let myrandom=Math.random();
+let my2d=100*myrandom;
+alert(my2d.toFixed(0))
+
+      }
+      function sayhi(){
+            //alert('hi changed!')//
+            let ans=confirm("wanna go to youtube?")
+            if(ans){
+               document.location.href="https://www.youtube.com"
+            }//else{
+              // document.location.href="https://www.google.com"//
+            } 
+      
+        function big(){
+           // console.log('hi')
+           let myimg=document.getElementById("myimg")
+           myimg.setAttribute('width','400px')
+           myimg.setAttribute('height','300px')
+        }
+        function normal(){
+           // console.log('hi')
+           let myimg=document.getElementById("myimg")
+           myimg.setAttribute('width','200px')
+           myimg.setAttribute('height','150px')
+           changephoto();
+        }
+        function changephoto(){
+         let myimg=document.getElementById("myimg");
+         mysrc=myimg.getAttribute("src");
+         console.log(mysrc);
+         if(mysrc=="../images/logo1.jpg"){
+            myimg.setAttribute("src","../images/logo4.jpg")
+         }else if(mysrc=="../images/logo4.jpg"){
+            myimg.setAttribute("src","../images/logo2.jpg")
+         }else{
+            myimg.setAttribute("src","../images/logo1.jpg")
+        }} 
+         
+        
+     </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Table</title>
+</head>
+<body>
+    <h1>Js Table</h1>
+    <table border="1px" cellpading="10">
+        <tbody id="mydata">
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+            <tr>
+                <td>1</td><td>2</td><td>3</td>
+            </tr>
+            <button onclick="showdata()">Show Data</button>
+            <script>
+                function showdata(){
+                   // alert('hi');
+                   var html='';
+                    for(var i=1;i<=10;i++){
+                    html =html+ "<tr>"
+                        for(var j=1;j<=10;j++){
+                        html=html +'<td>'+(i*j)+'</td>'
+                        }
+                            html=html+'</tr>'
+                        }
+                            document.getElementById("mydata").innerHTML=html;
+                            
+                        }
+                                      
+
+
+
+
+                
+            </script>
+
+        </tbody>
+    </table>
+</body>
+</html>

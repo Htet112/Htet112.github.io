@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function</title>
+</head>
+<body>
+    <h3 onclick="show('Mg Mg')">JS Function</h3>
+    <script>
+        function show(name){
+            alert('hi '+ name);
+        }
+        function f(x){
+            let result=x+5;
+           // console.log(result);
+            return result;
+        }
+        let f2=f(2);
+        let f3=f(3);
+        let f4=f(4);
+        let sum=5
+        function avg(num1,num2,num3){
+            alert(sum);
+            var total=num1+num2+num3;
+            return total/3 ;
+        }
+        let myavg=avg(4,5,6);
+        console.log('My Average '+myavg);
+
+        if( sum=5){
+            let myvar=6
+            console.log("In if block " +myvar)
+        }
+        // console.log("Out of block "+myvar)
+        const PI=3.14;
+        const student={
+            name : "Mg Mg",
+            age : 25
+
+        };
+        student.name="Aye Aye"
+        console.log(student);
+
+    </script>
+
+</body>
+</html>

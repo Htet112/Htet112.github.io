@@ -1,0 +1,23 @@
+.headingt{
+    display: inline-block;
+    color: black;
+    border-left:4px solid rgb(15, 219, 215) ;
+         }
+         .row{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+         }
+         
+         
+         .big{
+            text-align: right;
+            display: inline-block;
+           position: relative;
+           
+         }
+         .dilver{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 150px;
+            
+         }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Vlidation</title>
+</head>
+<body>
+    <h1>JS Form Vlidation</h1>
+    <form action="register.php" method="get" onsubmit="return check()">
+    Name:<input type="text" name="name" id="name"><br>
+    Password:<input type="password" name="password" id="password"><br>
+    Confrim Password:<input type="password" name="confrimpassword"
+    id="confrimpassword"><br>
+    <input type="submit" value="Register">
+    </form>
+    <script>
+function check(){
+    //return false; //
+    let name=document.getElementById('name').value;
+    let password=document.getElementById('password').value;
+    let confrimpassword=document.getElementById('confrimpassword').value;
+
+    if (name.length<3){
+        alert('Name must be at least 3 charcter!');
+        return false;
+    }
+    if(password.length<6){
+        alert('Password must be aleast 6 character');
+        return false;
+    }
+    if(password=confrimpassword){
+        alert('Password and confrimpassword doesnot match');
+        return false;
+    }
+    return true;
+    
+}
+    </script>
+</body>
+</html>

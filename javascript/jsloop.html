@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loop</title>
+</head>
+<body>
+    <h1>JS Loop</h1>
+    <script>
+for(var i=1;i<=10;i++)
+document.write(i +"hello world<br>")
+for(var j=10;j>0;j--)
+document.write(j +"hello j<br>")
+let a=10;
+let b=20;
+let c= a++ + 10;
+let d=a + ++b;
+let e=++a + --b;
+let f=a-- - b++;
+let flag=true;
+if(!flag){alert('hi')};
+/*var total=0
+let answer=parseInt(prompt("How many numbers?"))
+for(var i=1;i<=answer;i++){
+    let number=parseInt(prompt("Enter a number"));
+    total+=number; 
+} 
+alert('Total:'+total);
+var sum=0
+let answer=parseInt(prompt("How many numbe?"))
+for(var i=1;i<=answer;i++){ sum +=i;}
+    alert('the sum of 1'+sum); */
+    for(var i=1;i<=5; i++){
+        for(var j=1;j<=i; j++){
+        document.write(' * ');
+    }
+    document.write('<br>')}
+    let answer=parseInt(prompt("number range from 1 to 12"));
+    
+    for (var i=1;i<=16;i++)
+        for(var j=1;j<=12;j++){
+            let result=j * i
+        document.write(i+'x ' +j+ ' = ' +result+ '<br>')}
+</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* nav */
+.navbar ul{
+    float: right;
+    margin-top: 7px;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_brand{
+    display: inline-block;
+}
+.navbar{
+    padding: 20px;
+}
+.nav_brand a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #60b3c5;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: #60b3c5;
+    letter-spacing: 3px;
+    transition-duration: .7s;
+}
+
+
+.cart_noti{
+    position: relative;
+    bottom: 15px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    left: -5px;
+    border-radius: 50%;
+}
+/* nav end */
+
+/* buner */
+.bunner_image{
+    width: 100%;
+}
+
+.bunner_text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.shop_now{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.shop_now:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.bunner_header{
+    margin-bottom: 10px;
+}
+/* end bunner */
+/* category */
+
+.category_title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:20px;
+}
+.category .center a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.category{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.category .center a:hover{
+    background-color: #60b3c5;
+    color: white;
+    border: 1px solid #60b3c5;
+}
+
+.title{
+
+    border-left: 4px solid D#60b3c5;
+    
+    margin-left: 80px;
+    
+    padding-left: 30px;
+    
+    margin-top: 50px;}
+.new_arrival{
+    display: grid;
+
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-left: 60px; 
+    margin-right: 60px;
+     grid-row-gap: 10px;
+}
+    /* blog */
+    .blog{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 30px;
+     margin-top: 40px;
+     margin-left: 70px;
+     margin-right: 70px; } 
+     .blog_image{
+        width: 100%;
+        border-radius: 5px 5px 0px 0px ;
+        transition-duration: 4s;
+     }
+     .calender{
+        color: #60b3c5;
+        padding-left: 15px;
+     }
+     .read_more{
+        text-decoration: none;
+        color: #60b3c5;
+        padding-left: 15px;
+        padding-bottom: 35px;
+        padding-top: 15px;
+        display: inline-block;
+     }
+     .blog div{
+        box-shadow: -5px 10px 10px black;
+     }
+     .blog div h3{
+        padding: 5px 15px;
+        text-align: justify;
+     }
+     .image_zoom{
+        width: 100%;
+        
+        display:inline-block ;
+        overflow: hidden;
+
+     }
+     .blog_image:hover{
+        transform: scale(1.3);
+     }
+
+
+     /*  */
+     .headingt{
+        display: inline-block;
+        color: black;
+        border-left:4px solid rgb(15, 219, 215) ;
+        padding-left: 10px;
+             }
+             .row{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+             }
+             
+             
+             .big{
+                text-align: right;
+                display: inline-block;
+               position: relative;
+               
+               
+             }
+             .dilver div p span{
+                font-weight: bold;
+                display: block;
+                font-size: 20px;
+             }
+             
+             .dilver div p{
+                display: inline-block;
+    padding-left: 20px;
+    
+                
+             }
+             
+             .availble_image{
+                display: inline-block;
+                background-image: url(../images/iphone13.png);
+                height:200px ;
+                width:190px ;
+             }
+             .availble_image:hover{
+                background-image: url(../images/Image20221110201453.png);
+             }
+             .dilver{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                margin-top: 70px;
+                background-color: rgba(245, 245, 245, 0.201);
+                padding: 30px;
+             }
+             .more_image a{
+                display: inline-block;
+              
+                color: #60b3c5;
+                text-decoration: none;
+             }
+             .more_image{ 
+                text-align: center;}
+                /*  */
+                /* footer */
+                .footer{
+                    background-color: black;
+                    padding-top: 40px;
+                }
+                .footer .center a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: grey;
+                    margin: 20px 15px;
+                }
+                .desgined_by{
+                    color: gray;
+                }
+                .footer_icon{
+                    color: gray;
+                    padding: 10px 0px 40px;
+                }
+                
+/* product */
+.product{
+    margin-left: 30px; 
+ }
+ .product_one{
+     font-size: large;
+    
+     box-shadow: -1px 10px 10px  rgba(26, 24, 24,0.4);
+ }
+ .product_one h3{
+     margin-left: 10px;
+ }
+ .product_one p{
+     margin-top: 5px;
+     
+     text-align: left;
+padding-left: 10px;
+font-size: large;
+font-weight: 300;  
+}
+.product{
+display: grid;
+grid-template-columns: auto auto auto;
+
+
+}
+.product_one{
+display: inline-block;
+margin-top: 15px;
+margin-bottom: 20px;
+
+}
+.product_one img:hover{
+transform: scale(1.3);
+transition-duration: 0.7s;
+}
+.brand{
+    
+    font-size: larger;
+    font-weight: 200;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    
+}
+.brand a{
+    display: inline-block;
+    
+    text-decoration: none;
+    color: black;
+    background-color:gray ;
+    
+margin-top: 10px;
+margin-bottom: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+
+}
+.brand a:hover{
+    color: #60b3c5;
+    border-color: black;
+border-radius: 3px;
+border: 1px black solid;
+text-transform: capitalize;
+    
+}
+.brand a:active{
+    transform: scale(0.9);
+}
+.product_one a{
+    color: #60b3c5;
+}
+.product{
+    background-color: whitesmoke;
+}

@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    font-size:300%;
+    background-color: black;
+    color: antiquewhite;
+    
+}
+body{
+    border: 10px  black;
+background-color: blanchedalmond;
+background-image: url(../GAME/image/tumblr_9ff0be36a73dc5eaab2dccaaf063cad1_489d744f_1280.jpg);
+
+border-left:solid black 6px;
+border-right:solid black 6px ;
+}
+
+
+.divone{
+    color: black;
+}
+.video{
+    display: inline-block;
+    height:900pxx ;
+    width:  940px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.border{
+    font-size: larger;
+    font-weight: 200;
+}
